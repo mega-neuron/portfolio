@@ -18,20 +18,21 @@ export const aboutData = {
     "My work focuses on transforming complex problems into efficient, elegant solutions — whether that's designing seamless front-end experiences, building robust backend architectures, or developing AI-powered features. I work with modern technologies including React, Next.js, Node.js, Python, cloud platforms, and machine learning frameworks to deliver high-performance, scalable products.",
   ],
   services: [
-    {
-      icon: 'Code',
-      title: 'Frontend Development',
-      description: 'Building modern, responsive web applications with React, Next.js, TypeScript, and Tailwind CSS.',
-    },
+    
     {
       icon: 'Zap',
       title: 'Backend Development',
       description: 'Creating robust APIs and server-side solutions with Node.js, NestJS, Python, FastAPI, and modern frameworks.',
     },
     {
-      icon: 'Zap',
+      icon: 'Code',
       title: 'AI/ML Engineering',
       description: 'Developing intelligent systems using Python, TensorFlow, PyTorch, and modern machine learning frameworks.',
+    },
+    {
+      icon: 'Code',
+      title: 'Frontend Development',
+      description: 'Building modern, responsive web applications with React, Next.js, TypeScript, and Tailwind CSS.',
     },
     {
       icon: 'Zap',
@@ -112,64 +113,23 @@ export const portfolioData = {
   categories: ['all'],
   projects: [
     {
+      title: 'AI Learning platform',
+      category: 'Web Development',
+      image: '/portfolio/aicademio.png',
+      description: 'Production-grade AI education platform with interactive courses, challenges, quizzes, and hands-on lesson flows',
+      tech: ['Next.js', 'Firebase', 'TypeScript', 'Tailwind CSS', 'Stripe', 'React Native'],
+      liveUrl: 'https://aicademio.com',
+      githubUrl: 'https://github.com/Aicademio/aicademio',
+    },
+    {
       title: 'Multimodal AI system that analyzes stream VODs and chat activity',
       category: 'AI/ML Development',
-      image: '/pipeline-flow.png',
-      description: `Designed ML APIs for end-to-end pipeline stages: transcription, frame extraction, segment scoring, and clip selection.
-Built multimodal scoring logic using transcript quality, visual tags, motion intensity, and policy/risk signals.
-Implemented Gemini Pass 2 refinement to generate stronger final titles/tags from transcript + BLIP tags + chat quotes.
-Added robust fallback/retry logic for LLM calls (429/5xx handling, backoff, graceful degradation).
-Integrated ECAPA-TDNN speaker matching to personalize generated metadata with verified speaker context.
-Built chat ingestion + normalization pipeline for Twitch VOD/live data and downstream ranking features.`,
-      tech: ['Next.js', 'Node.js', 'PostgreSQL'],
+      image: '/portfolio/pipeline-flow.png',
+      description: `Designed ML APIs for end-to-end pipeline stages: transcription, frame extraction, segment scoring, and clip selection.`,
+      tech: ['Python', 'Fast API', 'Next.js', 'PostgreSQL'],
       liveUrl: 'https://video-on-demand.jaynher.com',
       githubUrl: 'https://github.com/jaynher-zapanta/video-on-demand',
-    },
-    {
-      title: 'Task Management App',
-      category: 'applications',
-      image: '/task-management-interface.png',
-      description: 'Collaborative task manager with real-time updates',
-      tech: ['React', 'Firebase', 'TypeScript'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/taskmanager',
-    },
-    {
-      title: 'Portfolio Website',
-      category: 'web design',
-      image: '/minimalist-portfolio-design.jpg',
-      description: 'Modern portfolio design for creative professionals',
-      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/portfolio',
-    },
-    {
-      title: 'Social Media Dashboard',
-      category: 'web development',
-      image: '/analytics-dashboard.png',
-      description: 'Analytics dashboard with data visualization',
-      tech: ['React', 'D3.js', 'Express'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/dashboard',
-    },
-    {
-      title: 'Mobile Banking App',
-      category: 'applications',
-      image: '/banking-app-interface.png',
-      description: 'Secure mobile banking application',
-      tech: ['React Native', 'Node.js', 'MongoDB'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/banking',
-    },
-    {
-      title: 'Restaurant Website',
-      category: 'web design',
-      image: '/restaurant-website-design.png',
-      description: 'Elegant restaurant website with online ordering',
-      tech: ['Next.js', 'Sanity CMS', 'Stripe'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/johndoe/restaurant',
-    },
+    },    
   ],
 }
 
